@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragment.MainFragment">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_margin="30dp"
+        android:text="SharedPreferences Manager"
+        android:id="@+id/btn_pref"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_margin="30dp"
+        android:text="dialog kotlin"
+        android:id="@+id/btn_dialog_kt"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_margin="30dp"
+        android:text="dialog compose"
+        android:id="@+id/btn_dialog_compose"/>
+
+</LinearLayout>
