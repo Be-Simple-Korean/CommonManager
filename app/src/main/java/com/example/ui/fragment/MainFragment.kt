@@ -1,4 +1,4 @@
-package com.example.commonmanager.fragment
+package com.example.ui.fragment
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -28,6 +28,10 @@ class MainFragment : Fragment() {
     private fun initListeners() {
         binding.btnPref.setOnClickListener {
             findNavController().navigate(R.id.action_mainFragment_to_prefFragment)
+        }
+
+        binding.btnDialogKt.setOnClickListener {
+            findNavController().navigate(R.id.action_mainFragment_to_dialogKtFragment)
         }
     }
 }
