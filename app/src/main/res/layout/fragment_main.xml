@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.ui.fragment.MainFragment">
+    tools:context=".ui.fragment.MainFragment">
 
     <Button
         android:layout_width="match_parent"
@@ -23,7 +23,7 @@
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:layout_margin="30dp"
-        android:text="dialog compose"
-        android:id="@+id/btn_dialog_compose"/>
+        android:text="dynamic broadcast receiver"
+        android:id="@+id/btn_broadcast"/>
 
 </LinearLayout>

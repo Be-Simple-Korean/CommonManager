@@ -1,4 +1,4 @@
-package com.example.ui.fragment
+package com.example.commonmanager.ui.fragment
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -32,6 +32,10 @@ class MainFragment : Fragment() {
 
         binding.btnDialogKt.setOnClickListener {
             findNavController().navigate(R.id.action_mainFragment_to_dialogKtFragment)
+        }
+
+        binding.btnBroadcast.setOnClickListener {
+            findNavController().navigate(R.id.action_mainFragment_to_dynamicBroadFragment)
         }
     }
 }

@@ -54,6 +54,10 @@ dependencies {
     val nav_version = "2.7.7"
     implementation("androidx.navigation:navigation-fragment-ktx:$nav_version")
     implementation("androidx.navigation:navigation-ui-ktx:$nav_version")
+    // Java language implementation
+    implementation("androidx.core:core:$1.13.0")
+    // Kotlin
+    implementation("androidx.core:core-ktx:$1.13.0")
 }
 kapt {
     correctErrorTypes = true

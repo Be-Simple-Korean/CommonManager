@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/mainFragment"
-        android:name="com.example.ui.fragment.MainFragment"
+        android:name="com.example.commonmanager.ui.fragment.MainFragment"
         android:label="fragment_main"
         tools:layout="@layout/fragment_main" >
         <action
@@ -16,15 +16,23 @@
         <action
             android:id="@+id/action_mainFragment_to_dialogKtFragment"
             app:destination="@id/dialogKtFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_dynamicBroadFragment"
+            app:destination="@id/dynamicBroadFragment" />
     </fragment>
     <fragment
         android:id="@+id/prefFragment"
-        android:name="com.example.ui.fragment.PrefFragment"
+        android:name="com.example.commonmanager.ui.fragment.PrefFragment"
         android:label="fragment_pref"
         tools:layout="@layout/fragment_pref" />
     <fragment
         android:id="@+id/dialogKtFragment"
-        android:name="com.example.ui.fragment.DialogKtFragment"
+        android:name="com.example.commonmanager.ui.fragment.DialogKtFragment"
         android:label="fragment_dialog_kt"
         tools:layout="@layout/fragment_dialog_kt" />
+    <fragment
+        android:id="@+id/dynamicBroadFragment"
+        android:name="com.example.commonmanager.ui.fragment.DynamicBroadFragment"
+        android:label="fragment_dynamic_broad"
+        tools:layout="@layout/fragment_dynamic_broad" />
 </navigation>
