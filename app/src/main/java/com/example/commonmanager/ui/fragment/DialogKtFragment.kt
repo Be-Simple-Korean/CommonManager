@@ -1,4 +1,4 @@
-package com.example.ui.fragment
+package com.example.commonmanager.ui.fragment
 
 import android.os.Bundle
 import android.util.Log
@@ -8,7 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.commonmanager.R
 import com.example.commonmanager.databinding.FragmentDialogKtBinding
-import com.example.ui.dialog.CommonDialog
+import com.example.commonmanager.ui.dialog.CommonDialog
 
 
 class DialogKtFragment : Fragment() {

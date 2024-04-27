@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="20dp"
-    tools:context="com.example.ui.fragment.PrefFragment">
+    tools:context=".ui.fragment.PrefFragment">
 
     <EditText
         android:id="@+id/et_key"
