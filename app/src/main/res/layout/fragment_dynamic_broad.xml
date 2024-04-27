@@ -20,4 +20,11 @@
         android:layout_margin="30dp"
         android:text="해제" />
 
+    <Button
+        android:id="@+id/btn_alarm"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="30dp"
+        android:text="알람매니저 사용" />
+
 </LinearLayout>
