@@ -20,11 +20,40 @@
         android:layout_marginTop="30dp"
         android:hint="value" />
 
-    <Button
+    <RadioGroup
+        android:id="@+id/radio_group"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Center" />
+
+        <RadioButton
+            android:id="@+id/rb_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Bottom" />
+
+        <RadioButton
+            android:id="@+id/rb_modal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Modal Bottom" />
+    </RadioGroup>
+
+    <Button
         android:id="@+id/btn_show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
         android:text="show" />
 
 

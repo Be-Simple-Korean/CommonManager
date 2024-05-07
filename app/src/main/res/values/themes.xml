@@ -10,4 +10,9 @@
         <!--<item name="android:windowFullscreen">true</item>-->
         <item name="android:windowBackground">@android:color/transparent</item>
     </style>
+
+    <style name="BottomDialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/bottom_dialog_open</item>
+        <item name="android:windowExitAnimation">@anim/bottom_dialog_close</item>
+    </style>
 </resources>
