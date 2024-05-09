@@ -43,6 +43,7 @@ android {
 
 dependencies {
     implementation("com.google.dagger:hilt-android:2.50")
+    implementation("androidx.activity:activity:1.8.0")
     kapt("com.google.dagger:hilt-android-compiler:2.50")
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.11.0")
@@ -58,6 +59,7 @@ dependencies {
     // Kotlin
     implementation("androidx.core:core-ktx:$1.13.0")
 
+    implementation("androidx.core:core-splashscreen:1.0.1")
 }
 kapt {
     correctErrorTypes = true
