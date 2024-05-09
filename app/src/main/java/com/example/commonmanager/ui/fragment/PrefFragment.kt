@@ -1,11 +1,14 @@
 package com.example.commonmanager.ui.fragment
 
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.activity.OnBackPressedCallback
+import androidx.activity.addCallback
 import com.example.commonmanager.R
 import com.example.commonmanager.databinding.FragmentPrefBinding
 import com.example.commonmanager.utils.PrefManager
@@ -18,7 +21,13 @@ class PrefFragment : Fragment() {
     private lateinit var binding: FragmentPrefBinding
 
     @Inject
-    lateinit var prefManager : PrefManager
+    lateinit var prefManager: PrefManager
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        requireActivity().onBackPressedDispatcher.addCallback(this){
+            Log.e("뒤로가기","pref")
+        }
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

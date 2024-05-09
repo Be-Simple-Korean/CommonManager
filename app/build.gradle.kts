@@ -44,7 +44,6 @@ android {
 dependencies {
     implementation("com.google.dagger:hilt-android:2.50")
     kapt("com.google.dagger:hilt-android-compiler:2.50")
-    implementation("androidx.core:core-ktx:1.12.0")
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.11.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
@@ -55,9 +54,10 @@ dependencies {
     implementation("androidx.navigation:navigation-fragment-ktx:$nav_version")
     implementation("androidx.navigation:navigation-ui-ktx:$nav_version")
     // Java language implementation
-    implementation("androidx.core:core:$1.13.0")
+    implementation("androidx.core:core-ktx:$1.13.0")
     // Kotlin
     implementation("androidx.core:core-ktx:$1.13.0")
+
 }
 kapt {
     correctErrorTypes = true
