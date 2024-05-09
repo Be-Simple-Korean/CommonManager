@@ -44,25 +44,24 @@ class PrefManager {
         editor.apply()
     }
 
-    fun getString(key: String) {
-        sharedPreferences.getString(key, "");
+    fun getString(key: String): String {
+        return sharedPreferences.getString(key, "") ?: ""
     }
 
-    fun getLong(key: String) {
-        sharedPreferences.getLong(key, 0);
+    fun getLong(key: String): Long {
+        return sharedPreferences.getLong(key, 0)
     }
 
-    fun getInt(key: String) {
-        sharedPreferences.getInt(key, 0);
+    fun getInt(key: String) :Int {
+        return sharedPreferences.getInt(key, 0)
     }
 
-    fun getBoolean(key: String) {
-        sharedPreferences.getBoolean(key, false);
+    fun getBoolean(key: String) : Boolean {
+        return sharedPreferences.getBoolean(key, false)
     }
 
-    fun getFloat(key: String) {
-        sharedPreferences.getFloat(key, 0f);
+    fun getFloat(key: String) :Float{
+        return sharedPreferences.getFloat(key, 0f)
     }
-
 
 }
